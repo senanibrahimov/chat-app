@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatactivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarlayour"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarmain"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/tundyasil"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/profileimage"
+                android:src="@drawable/common_full_open_on_phone"
+                >
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username3"
+                android:layout_marginLeft="25dp"
+                android:text="username"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/messagereycel"
+    android:layout_below="@id/appbarlayour"
+android:layout_above="@id/senmesseage">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/senmesseage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/sentext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/imaebuutton"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:hint="Type a message..."
+
+      >
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/imaebuutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_send_24"
+            android:background="@color/white">
+
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>

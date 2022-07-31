@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Loginactivity">
+    <include layout="@layout/bar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to account"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold">'
+        </TextView>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:layout_marginTop="10dp"
+            android:hint="enter email"
+            android:inputType="textEmailAddress"
+            android:lines="2"            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterpassword"
+            android:layout_marginTop="10dp"
+            android:hint="enter password"
+            android:inputType="textPassword"
+            android:lines="2"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <Button
+            android:id="@+id/loginto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="20sp"
+            android:background="@color/tundyasil"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
