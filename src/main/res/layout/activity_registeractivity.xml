@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registeractivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="first app"
+        app:titleTextColor="@color/white"
+        android:background="@color/purple_500"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="?actionBarSize"
+             >
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="create account"
+           android:textSize="22dp"
+           android:textAlignment="center"
+           android:layout_margin="20dp"
+           android:textStyle="bold">
+
+       </TextView>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="username"
+            android:textSize="30sp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="your email"
+            android:textSize="30sp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="password"
+            android:textSize="30sp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:onClick="register"
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/register"
+            android:textStyle="bold"
+            android:textSize="26sp"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
